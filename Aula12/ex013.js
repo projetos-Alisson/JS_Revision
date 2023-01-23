@@ -1,0 +1,44 @@
+var atual = new Date()
+var diaSem = atual.getDay()
+
+
+
+/* 
+
+   0 - Domingo
+   1 - Segunda
+   2 - Terça
+   3 - Quarta 
+   4 - Quinta
+   5 - Sexta
+   6 - Sábado
+
+*/
+
+//console.log(diaSem)
+
+
+switch(diaSem) {
+
+    case 0:
+        console.log('Domingo')
+        break
+    case 1:
+        console.log('Segunda')
+        break
+    case 2:
+        console.log('Terca')
+        break
+    case 3:
+        console.log('Terca')
+        break
+    case 5:
+        console.log('Terca')
+        break
+    case 6:
+        console.log('Terca')
+        break
+    default:
+       console.log('[ERROR] dia inválido')  
+       break
+}
