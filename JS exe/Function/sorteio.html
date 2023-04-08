@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Adivinhe o número</h2>
+
+    <label>Numero:<input id="num" type="number"></label>
+    <button onclick="main()">Testar</button><br>
+
+    <label>Tentativas: <div id="tentativas" style='display:inline'></div></label><br>
+    <label>Dica: <div id="dica" style='display:inline'></div></label><br>
+    <button onclick="window.location.reload()">Reiniciar</button>
+
+    <script>
+        var tentativa=0;
+var numero = Math.floor( (1 + 100*Math.random()) );
+
+function main()
+{
+	var tent = document.getElementById('tentativas');
+	var num1 = parseInt(document.getElementById("num").value);
+	var dica = document.getElementById('dica');
+	
+	tentativa++;
+	dica.innerHTML = teste(num1);
+	tent.innerHTML = tentativa;
+}
+
+function teste(x)
+{	
+	if(x<numero)
+		return "Seu numero é menor que o sorteado";
+	else
+		if(x>numero)
+			return "Seu numero é maior que o sorteado";
+		else
+			return ("Parabéns! Acertou, a resposta era " + numero);
+
+}
+
+</script>
+</body>
+</html>
