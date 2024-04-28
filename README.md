@@ -6,9 +6,9 @@ que realizei, nos meus estudos pessoais.
 
 Você pode utilizá-lo como:
 <ul>
-  <li><strong>Revisão</strong> da linguagem</li>
-  <li><strong>Entender</strong> sobre o DOM (Document Object Model)</li>
-  <li><strong>Se inspirar</strong> nos códigos para projetos pessoais ou para estudo</li>
+  <li><strong>Revisão</strong> da linguagem;</li>
+  <li><strong>Entender</strong> sobre o DOM (Document Object Model);</li>
+  <li><strong>Se inspirar</strong> nos códigos para projetos pessoais ou para estudo.</li>
 </ul>
 
 # DOM (Document Object Model)
@@ -28,3 +28,6 @@ O DOM (Document Object Model) em JavaScript é uma interface de programação qu
     <li>removeChild(): Para remover um elemento do DOM.</li>
 </ul>
 
+# CHAT GPT
+
+Há uma pasta com um projeto simples, feito pelo Chat GPT, para que demonstrasse nas prática, os principais métodos do DOM. Recomendo baixá-lo na sua máquina, para ver os resultados na prática.
