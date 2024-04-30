@@ -23,16 +23,20 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Função para animar o primeiro elemento ao clicar no botão "Animar Elemento"
+    // Função para animar todos os elementos ao clicar no botão "Animar Elemento"
     animateBtn.addEventListener("click", function() {
-        const firstElement = document.querySelector(".element");
-        if (firstElement) {
-            firstElement.style.transition = "transform 0.5s ease-in-out";
-            firstElement.style.transform = "translateX(200px)";
-            // Após a animação, restaura a posição original
-            setTimeout(function() {
-                firstElement.style.transform = "none";
-            }, 500);
+        const AllElements = document.querySelectorAll(".element");
+        if (AllElements) {
+            AllElements.forEach((e) =>{
+
+                e.style.transition = "transform 0.5s ease-in-out";
+                e.style.transform = "translateX(200px)";
+                // Após a animação, restaura a posição original
+                setTimeout(function() {
+                    e.style.transform = "none";
+                }, 500);
+            })
+         
         }
     });
 
